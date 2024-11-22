@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de senhas</title>
+</head>
+<body>
+    <form>
+        <div class="title"><h2>Gerador de senhas aleatório</h2></div>
+            <br>
+        <div class="inputgroup">
+            <div>
+                <label>Números 1-9</label>
+                <input type="checkbox" name="options" value="numbers">
+            </div>
+            <div>
+                <label>Letras a-Z</label>
+                <input type="checkbox" name="options" value="letters">
+            </div>
+            <div>
+                <label>Caracteres Especiais $@%</label>
+                <input type="checkbox" name="options" value="special">
+            </div>
+            <div>
+                <label>Tamanho</label>
+                <input type="number" id='campo' name="tamanho" value="10">
+            </div>
+            <br>
+            <button type="button" onclick="ObterValores()">Gerar Senha</button>
+            <br>
+            <input type="text" id="pass" placeholder="Senha aleatória!">
+        </div>
+            
+    </form>
+    <script src="logic.js"></script>
+    
+</body>
+</html>
